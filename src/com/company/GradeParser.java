@@ -22,7 +22,7 @@ public class GradeParser {
         Document document;
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        document = documentBuilder.parse(filename);//для работы с документом в Java
+        document = documentBuilder.parse(filename);//для работы с документоgм в Java
         Element root = document.getDocumentElement(); //получаем корневой элемент документа
         NodeList gradeList = root.getElementsByTagName("grade");//получаем список дочерних элементов grade
         for (int i = 0; i < gradeList.getLength(); i++) {
